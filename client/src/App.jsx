@@ -26,10 +26,16 @@ const App = () => {
     setLoading(true);
     setAnimationClass("animate-pulse");
 
+    // const endpoint =
+    //   model === "decision-tree"
+    //     ? "http://127.0.0.1:8000/predict-decision-tree"
+    //     : "http://127.0.0.1:8000/predict-logistic";
+
     const endpoint =
-      model === "decision-tree"
-        ? "http://127.0.0.1:8000/predict-decision-tree"
-        : "http://127.0.0.1:8000/predict-logistic";
+  model === "decision-tree"
+    ? "https://machinelearning-lab-assignment-1-1.onrender.com/predict-decision-tree"
+    : "https://machinelearning-lab-assignment-1-1.onrender.com/predict-logistic";
+
 
     try {
       // Simulate a small delay for better UX
